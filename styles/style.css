@@ -1,7 +1,21 @@
-*{
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap");
 
+:root {
+  --main-background-color: #131518;
+  --secondary-background-color: radial-gradient(
+    98.96% 98.96% at 50% 0%,
+    #232a34 0%,
+    #181e27 100%
+  );
+  --misc-background-colors: #262e38;
+  --global-white: #ffffff;
+  --global-grey: #969fad;
+  --global-orange: #fc7614;
 }
 
-body{
-    
+* {
+  font-family: "Overpass";
+}
+
+body {
 }
