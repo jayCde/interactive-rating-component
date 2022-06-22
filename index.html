@@ -8,10 +8,11 @@
     <title>Interactive rating</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./styles/style.css">
+    <script src="./js/script.js" defer></script>
 </head>
 
 <body class="component-body" id="interactive-rating-component">
-    <div class="rating-container" id="rating-container">
+    <form class="rating-container" id="rating-container">
         <div class="logo-container" id="logo">
             <span class="fa fa-star"></span>
             <!-- <span class="fa fa-star checked"></span> -->
@@ -20,14 +21,14 @@
         <p class="info-paragraph" id="info">Please let us know how we did with your support request. All feedback is
             appreciated to help us improve our offering!</p>
         <div class="rating-values-container">
-            <button class="rate-btn" id="rate-val-1">1</button>
-            <button class="rate-btn" id="rate-val-2">2</button>
-            <button class="rate-btn" id="rate-val-3">3</button>
-            <button class="rate-btn" id="rate-val-4">4</button>
-            <button class="rate-btn" id="rate-val-5">5</button>
+            <button class="rate-btn" id="rate-val" value="1" type="button">1</button>
+            <button class="rate-btn" id="rate-val" value="2" type="button">2</button>
+            <button class="rate-btn" id="rate-val" value="3" type="button">3</button>
+            <button class="rate-btn" id="rate-val" value="4" type="button">4</button>
+            <button class="rate-btn" id="rate-val" value="5" type="button">5</button>
         </div>
-        <button class="btn-submit-rating">Submit</button>
-    </div>
+        <button type="submit" class="btn-submit-rating">Submit</button>
+    </form>
 </body>
 
 </html>

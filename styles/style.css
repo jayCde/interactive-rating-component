@@ -7,11 +7,14 @@
     #232a34 0%,
     #181e27 100%
   );
+
   --misc-background-colors: #262e38;
   --global-white: #ffffff;
   --light-grey: #969fad;
   --medium-gray: #7c8798;
   --global-orange: #fc7614;
+  --orange: #fc7614;
+
 
   --radius-primary: 30px;
   --radius-secondary: 22.5px;
@@ -24,7 +27,7 @@
 }
 
 body {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background: var(--main-background-color);
   display: flex;
