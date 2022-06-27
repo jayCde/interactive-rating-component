@@ -6,23 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
-
     <title>Thank you</title>
 
 </head>
 
 <body class="component-body" id="interactive-rating-component-thank-you">
     <div class="thank-you-container" id="thankyou-container">
-        <img src="./img/Online_payment_Two_Color.svg" alt="thank you logo" class="thank-you-logo"/>
-        <span class="rating-response" id="rating-response-val">You selected 4 out of 5</span>
+        <img src="./img/Online_payment_Two_Color.svg" alt="thank you logo" class="thank-you-logo" />
+        <span class="rating-response" id="rating-response-val">
+            
+        </span>
         <h2 class="component-heading" id="question">Thank you!</h2>
-        <p class="info-paragraph thank-you-info" id="info">We appreciate you taking the time to give a rating. If you ever need more
+        <p class="info-paragraph thank-you-info" id="info">We appreciate you taking the time to give a rating. If you
+            ever need more
             support, don’t hesitate to get in touch!!</p>
     </div>
 </body>
 <script>
-    var selectedVal, totalVal;
-    selectedVal = 4; totalVal = 5;
+    //get rate value in storage
+    var rating_val = localStorage.getItem('selected_rate');
+
+    //rating response assignment
+    let rating_response = `You selected ${rating_val} out of 5 `
+
+    //append response text to html element
+    document.getElementById('rating-response-val').innerText = rating_response;
+
 </script>
 
 </html>
