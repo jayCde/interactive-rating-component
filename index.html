@@ -12,7 +12,7 @@
 </head>
 
 <body class="component-body" id="interactive-rating-component">
-    <form class="rating-container" id="rating-container">
+    <form class="rating-container" id="rating-container" action="./thankyou.html">
         <div class="logo-container" id="logo">
             <span class="fa fa-star"></span>
             <!-- <span class="fa fa-star checked"></span> -->
@@ -20,15 +20,16 @@
         <h2 class="component-heading" id="question">How did we do?</h2>
         <p class="info-paragraph" id="info">Please let us know how we did with your support request. All feedback is
             appreciated to help us improve our offering!</p>
-        <div class="rating-values-container">
-            <button class="rate-btn" id="rate-val" value="1" type="button">1</button>
-            <button class="rate-btn" id="rate-val" value="2" type="button">2</button>
-            <button class="rate-btn" id="rate-val" value="3" type="button">3</button>
-            <button class="rate-btn" id="rate-val" value="4" type="button">4</button>
-            <button class="rate-btn" id="rate-val" value="5" type="button">5</button>
+        <div class="rating-values-container" id="rating-values">
+            <!-- Using intext script to store values to local storage -->
+            <button class="rate-btn" id="rate-val" value="1" type="button" onclick="localStorage.setItem('selected_rate', value)">1</button>
+            <button class="rate-btn" id="rate-val" value="2" type="button" onclick="localStorage.setItem('selected_rate', value)">2</button>
+            <button class="rate-btn" id="rate-val" value="3" type="button" onclick="localStorage.setItem('selected_rate', value)">3</button>
+            <button class="rate-btn" id="rate-val" value="4" type="button" onclick="localStorage.setItem('selected_rate', value)">4</button>
+            <button class="rate-btn" id="rate-val" value="5" type="button" onclick="localStorage.setItem('selected_rate', value)">5</button>
         </div>
         <button type="submit" class="btn-submit-rating">Submit</button>
+
     </form>
 </body>
-
 </html>
